@@ -521,33 +521,33 @@ class SimplifiedTester:
 
 
 # Main execution
-# async def main():
-#     # Configuration
-#     CSE_API_KEY = "AIzaSyD3xOVScQF_Glljhtnc5TEmBzANf4PHepc"
-#     CSE_ID = "93ed7b757d0114273"
+async def main():
+    # Configuration
+    CSE_API_KEY = "AIzaSyD3xOVScQF_Glljhtnc5TEmBzANf4PHepc"
+    CSE_ID = "93ed7b757d0114273"
     
-#     # Initialize fetcher with Vertex AI
-#     fetcher = BuildingCodeFetcher(
-#         cse_api_key=CSE_API_KEY,
-#         cse_id=CSE_ID,
-#         use_vertex_ai=True
-#     )
+    # Initialize fetcher with Vertex AI
+    fetcher = BuildingCodeFetcher(
+        cse_api_key=CSE_API_KEY,
+        cse_id=CSE_ID,
+        use_vertex_ai=True
+    )
     
-#     # Initialize simplified tester
-#     tester = SimplifiedTester(fetcher)
-#     # Test case
-#     test_address = "8705 COUNTY ROAD 206A, Alvarado, TX 76009"
-#     test_date = "May 30 2024"
+    # Initialize simplified tester
+    tester = SimplifiedTester(fetcher)
+    # Test case
+    test_address = "8705 COUNTY ROAD 206A, Alvarado, TX 76009"
+    test_date = "May 30 2024"
     
-#     # Run the test and get results
-#     results = await tester.run_test(
-#         address=test_address,
-#         loss_date=test_date,
-#         max_links=5  # Process top 3 search results
-#     )
+    # Run the test and get results
+    results = await tester.run_test(
+        address=test_address,
+        loss_date=test_date,
+        max_links=5  # Process top 3 search results
+    )
     
-#     # Return the extracted codes
-#     return results
+    # Return the extracted codes
+    return results
 
 
 # # Simple function to get codes for a specific address
